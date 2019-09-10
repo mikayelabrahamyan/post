@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-bind */
 import React, { Component, Suspense } from 'react';
-import { Button, Input } from '../componentsLib/simpleUiComponents';
+import { Button, Input } from '../global/simpleUiComponents';
 class Modal extends Component {
     constructor(props) {
         super(props);
@@ -73,7 +73,7 @@ class Modal extends Component {
                         />
                     </div>
                     <div className="modal-btn">
-                        <Suspense fallback='...' maxDuration={100}>
+                        <Suspense fallback='...'>
                             <Button type='submit' uppercase >{resolveButtonText || 'insert'}</Button>
                             <Button uppercase onClick={() => this.Cancel()}>{rejectButtonTetx || 'cancel'}</Button>
                         </Suspense>
@@ -87,7 +87,7 @@ class Modal extends Component {
                         <p dangerouslySetInnerHTML={{ __html: text }} />
                     </div>
                     <div className="modal-btn">
-                        <Suspense fallback='...' maxDuration={100}>
+                        <Suspense fallback='...'>
                             <Button uppercase onClick={() => this.Success()}>yes</Button>
                             <Button uppercase onClick={() => this.Cancel()}>no</Button>
                         </Suspense>
@@ -101,7 +101,7 @@ class Modal extends Component {
                         <p>{text}</p>
                     </div>
                     <div className="modal-btn">
-                        <Suspense fallback='...' maxDuration={100}>
+                        <Suspense fallback='...'>
                             <Button uppercase onClick={() => this.Success()}>ok</Button>
                         </Suspense>
                     </div>
@@ -114,7 +114,7 @@ class Modal extends Component {
                         <p>{text}</p>
                     </div>
                     <div className="modal-btn">
-                        <Suspense fallback='...' maxDuration={100}>
+                        <Suspense fallback='...'>
                             <Button uppercase onClick={() => this.Success()}>ok</Button>
                         </Suspense>
                     </div>

@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "@types/react-router": "^5.0.3",
+    "@types/styled-components": "^4.1.19",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-router": "^5.0.1",
-    "react-scripts": "3.1.1"
+    "react-scripts": "3.1.1",
+    "styled-components": "^4.3.2"
   },
   "scripts": {
     "start": "react-scripts start",
