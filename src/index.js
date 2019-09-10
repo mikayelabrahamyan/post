@@ -7,10 +7,8 @@ import Routes from './routes';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<Router history={history} >
-    <>
-        <Routes />
-        <Modal ref={(Modal) => { window.customModal = Modal; }} />
-    </>
+    <Routes />
+    <Modal ref={(Modal) => { window.customModal = Modal; }} />
 </Router>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
